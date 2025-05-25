@@ -1,0 +1,16 @@
+<%-include("partials/header.ejs")%>
+
+<h2>All Posts</h2>
+<a href="/new" class="btn">+ New Post</a>
+<div class="posts">
+    <% posts.forEach(post => { %>
+        <div class="post">
+            <h3><%= post.title %></h3>
+            <p><%= post.content %></p>
+            <a href="/edit/<%= post.id %>" class="btn small">Edit</a>
+            <a href="/delete/<%= post.id %>" class="btn small delete">Delete</a>
+        </div>
+    <% }) %>
+</div>
+
+<%-include("partials/footer.ejs")%>

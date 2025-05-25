@@ -1,0 +1,177 @@
+/* Base Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ccc;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+/* Navigation */
+nav {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #007acc;
+}
+
+/* Main */
+main.container {
+    padding-top: 10px;
+}
+
+/* Posts Section */
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.post h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.post p {
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #007acc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #005fa3;
+}
+
+.btn.small {
+    padding: 6px 12px;
+    font-size: 0.9em;
+    margin-right: 10px;
+}
+
+.btn.small.delete {
+    background-color: #cc0000;
+}
+
+.btn.delete:hover {
+    background-color: #990000;
+}
+
+/* Footer */
+footer {
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 40px;
+}
+
+/* Forms (for new/edit post pages) */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.form input[type="text"],
+.form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1em;
+}
+
+.form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .site-title {
+        font-size: 1.6em;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    .btn.small {
+        margin-bottom: 10px;
+    }
+
+    .posts {
+        gap: 15px;
+    }
+}

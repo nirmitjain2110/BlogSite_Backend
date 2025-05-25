@@ -1,0 +1,12 @@
+{
+  "name": "blog-site",
+  "version": "1.0.0",
+  "description": "Making a blog website using node, express and ejs",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nirmit Jain",
+  "license": "ISC"
+}
